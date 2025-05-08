@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "antd";
 import temoniter from "./img/icons8-thermometer-96.png";
 import air from "./img/icons8-air-96.png";
@@ -21,7 +20,10 @@ function Detail() {
   return (
     <div className="lg:h-screen md:h-[2700px] lg:w-[1535px] md:w-[2000px] lg:bg-sky md:bg-sky lg:bg-cover md:bg-cover overflow-hidden">
       <div className="absolute lg:h-[400px] md:h-[550px] bg-slate-100 lg:w-[800px] md:w-[1200px] lg:rounded-xl md:rounded-3xl shadow-xl lg:ml-[350px] md:ml-[350px] lg:mt-10 md:mt-36">
-        <img className="absolute lg:ml-[240px] md:ml-[320px] lg:mt-9 md:mt-12 lg:h-9 md:h-11" src={marker} />
+        <img
+          className="absolute lg:ml-[240px] md:ml-[320px] lg:mt-9 md:mt-12 lg:h-9 md:h-11"
+          src={marker}
+        />
         <p className="text-center font font-Mitr text-gray-600 lg:text-3xl md:text-5xl lg:pt-10 md:pt-12">
           อำเภอเมืองขอนแก่น
         </p>
@@ -31,31 +33,52 @@ function Detail() {
         </div>
         <div className="flex h-32">
           <img className="ml-5 lg:h-20 md:h-28 mt-5" src={temoniter} />
-          <p className="font font-Mitr lg:text-7xl md:text-8xl text-gray-700 mt-7">29°</p>
-          <img className="lg:h-44 md:h-60 -mt-14 lg:ml-28 md:ml-40" src={cloud} />
+          <p className="font font-Mitr lg:text-7xl md:text-8xl text-gray-700 mt-7">
+            29°
+          </p>
+          <img
+            className="lg:h-44 md:h-60 -mt-14 lg:ml-28 md:ml-40"
+            src={cloud}
+          />
           <div className="flex flex-col -mt-20 ml-10">
             <div className="flex flex-row">
-              <img className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 mt-8" src={air} />
-              <p className="font font-Mitr text-gray-600 md:text-xl mt-10 ml-3">Wind:</p>
-              <p className="font font-Mitr text-gray-600 md:text-xl mt-10 ml-2">9km/h</p>
+              <img
+                className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 mt-8"
+                src={air}
+              />
+              <p className="font font-Mitr text-gray-600 md:text-xl mt-10 ml-3">
+                Wind:
+              </p>
+              <p className="font font-Mitr text-gray-600 md:text-xl mt-10 ml-2">
+                9km/h
+              </p>
             </div>
 
             <div className="flex flex-row">
-              <img className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 md:mt-2" src={north} />
+              <img
+                className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 md:mt-2"
+                src={north}
+              />
               <p className="font font-Mitr text-gray-600 md:text-xl mt-4 ml-3">
                 North-East
               </p>
             </div>
 
             <div className="flex flex-row">
-              <img className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 md:mt-2" src={sunrisr} />
+              <img
+                className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 md:mt-2"
+                src={sunrisr}
+              />
               <p className="font font-Mitr text-gray-600 md:text-xl mt-5 ml-2 md:mt-5 text-base">
                 Sunrise
               </p>
             </div>
 
             <div className="flex flex-row">
-              <img className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 md:mt-2" src={sunset} />
+              <img
+                className="lg:h-8 md:h-14 lg:ml-14 md:ml-32 md:mt-2"
+                src={sunset}
+              />
               <p className="font font-Mitr text-gray-600 md:text-xl mt-5 ml-2 text-base">
                 Sunset
               </p>
@@ -74,9 +97,7 @@ function Detail() {
           แดดออก คาดว่าจะมีเมฆบางส่วนประมาณเวลา 18:00 น.
         </p>
       </div>
-      <Row
-        className="absolute bottom-0 md:w-[1500px] lg:ml-40 md:ml-96 lg:mb-24 md:-mb-4"
-      >
+      <Row className="absolute bottom-0 md:w-[1500px] lg:ml-40 md:ml-96 lg:mb-24 md:-mb-4">
         <Col
           className="lg:h-40 md:h-40  bg-[#0033FF] rounded-2xl shadow-lg shadow-slate-800"
           span={2}

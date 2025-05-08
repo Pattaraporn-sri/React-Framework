@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 // import "./App.css";
 import { Col, Row, Input, Space, Flex, Progress } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
@@ -34,7 +32,10 @@ function MainPage() {
         <div className="absolute lg:w-[550px] md:w-[958px] lg:h-[730px] md:h-[2000px] lg:right-0 lg:bg-climate md:bg-climate bg-no-repeat lg:bg-cover md:bg-cover">
           <div className="bg-white lg:bg-opacity-60 md:bg-opacity-50 md:h-[2000px] pb-4">
             <div className="flex lg:pt-6 md:pt-14 lg:ml-4 md:ml-[550px]">
-              <Space.Compact className="lg:ml-5 lg:w-[300px] md:w-[250px]" size="large">
+              <Space.Compact
+                className="lg:ml-5 lg:w-[300px] md:w-[250px]"
+                size="large"
+              >
                 <Input addonBefore={<SearchOutlined />} placeholder="search" />
               </Space.Compact>
               <img className="h-6 lg:ml-32 md:ml-10 mt-2" src={bell} />
@@ -49,7 +50,10 @@ function MainPage() {
                       ขอนแก่น
                     </p>
                   </div>
-                  <img className="h-20 w-24 lg:ml-48 md:ml-60 -mt-3" src={Cloud} />
+                  <img
+                    className="h-20 w-24 lg:ml-48 md:ml-60 -mt-3"
+                    src={Cloud}
+                  />
                   <p className="font font-Mitr font-normal text-stone-800 text-lg mt-2">
                     Today, 14 April
                   </p>
@@ -152,7 +156,10 @@ function MainPage() {
             <div className="flex lg:mt-3 md:mt-96 lg:ml-16 md:ml-32">
               <Col className="lg:ml-6 md:ml-10" span={4}>
                 <div className="shadow-lg shadow-zinc-400 lg:h-36 md:h-28 lg:w-28  md:w-20 md:ml-4 bg-white text-center rounded-xl pt-1">
-                  <img className="lg:ml-6 md:ml-4 lg:mt-3 md:mt-2 lg:h-16 md:h-10" src={lightning} />
+                  <img
+                    className="lg:ml-6 md:ml-4 lg:mt-3 md:mt-2 lg:h-16 md:h-10"
+                    src={lightning}
+                  />
                   <div className="mt-3 font-bold font font-Varela text-slate-700">
                     <p>Sun</p>
                     <div>28°</div>
@@ -161,7 +168,10 @@ function MainPage() {
               </Col>
               <Col span={4}>
                 <div className="shadow-lg shadow-slate-400 lg:h-36 md:h-28 lg:w-28 md:w-20 md:ml-4 bg-white  text-white text-center rounded-xl pt-1">
-                  <img className="lg:ml-7 md:ml-5 lg:mt-3 md:mt-2 lg:h-16 md:h-10" src={rain} />
+                  <img
+                    className="lg:ml-7 md:ml-5 lg:mt-3 md:mt-2 lg:h-16 md:h-10"
+                    src={rain}
+                  />
                   <div className="mt-3 font-bold font font-Varela text-slate-700">
                     <p>Mon</p>
                     <p>17°</p>
@@ -170,7 +180,10 @@ function MainPage() {
               </Col>
               <Col span={4}>
                 <div className=" shadow-lg shadow-slate-400 lg:h-36 md:h-28 lg:w-28 md:w-20 md:ml-4 bg-white  text-white text-center rounded-xl pt-1">
-                  <img className="lg:ml-6 md:ml-5 mt-4 lg:mt-3 md:mt-2 lg:h-16 md:h-10" src={cloundrain} />
+                  <img
+                    className="lg:ml-6 md:ml-5 mt-4 lg:mt-3 md:mt-2 lg:h-16 md:h-10"
+                    src={cloundrain}
+                  />
                   <div className="mt-3 font-bold font font-Varela text-slate-700">
                     <p>Tue</p>
                     <p>20°</p>
@@ -179,7 +192,10 @@ function MainPage() {
               </Col>
               <Col className="" span={4}>
                 <div className=" shadow-lg shadow-slate-400 lg:h-36 md:h-28 lg:w-28 md:w-20 md:ml-4 bg-white  text-white text-center rounded-xl pt-1">
-                  <img className="lg:ml-8 lg:mt-3 lg:h-16 md:h-11 md:ml-5 md:mt-2" src={cloundlightning} />
+                  <img
+                    className="lg:ml-8 lg:mt-3 lg:h-16 md:h-11 md:ml-5 md:mt-2"
+                    src={cloundlightning}
+                  />
                   <div className="mt-3 font-bold font font-Varela text-slate-700">
                     <p>Wed</p>
                     <p>22°</p>
@@ -188,7 +204,10 @@ function MainPage() {
               </Col>
               <Col className="" span={4}>
                 <div className=" shadow-lg shadow-slate-400 lg:h-36 md:h-28 lg:w-28 md:w-20  md:ml-4 bg-white  text-white text-center rounded-xl pt-1">
-                  <img className="lg:ml-9 md:ml-5 lg:mt-5 md:mt-2 lg:h-14 md:h-11 " src={cloudy} />
+                  <img
+                    className="lg:ml-9 md:ml-5 lg:mt-5 md:mt-2 lg:h-14 md:h-11 "
+                    src={cloudy}
+                  />
                   <div className="mt-3 font-bold font font-Varela text-slate-700">
                     <p>Thu</p>
                     <p>19°</p>
@@ -197,7 +216,10 @@ function MainPage() {
               </Col>
               <Col className="">
                 <div className=" shadow-lg shadow-slate-400 lg:h-36 md:h-28 lg:w-28 md:w-20 md:ml-5 bg-white  text-white text-center rounded-xl pt-1">
-                  <img className="lg:ml-6 md:ml-5  mt-5 lg:h-14 md:h-11 lg:mt-4 md:mt-3" src={moonnight} />
+                  <img
+                    className="lg:ml-6 md:ml-5  mt-5 lg:h-14 md:h-11 lg:mt-4 md:mt-3"
+                    src={moonnight}
+                  />
                   <div className="mt-3 font-bold font font-Varela text-slate-700">
                     <p>Fri</p>
                     <p>25°</p>
