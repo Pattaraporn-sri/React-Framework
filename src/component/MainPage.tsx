@@ -1,4 +1,3 @@
-// import "./App.css";
 import { Col, Row, Input, Space, Flex, Progress } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import darksun from "./img/icons8-night-64.png";
